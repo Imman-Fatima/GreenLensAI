@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8F3"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/greenlens_icon"
+            android:contentDescription="GreenLensAI Logo"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GreenLensAI"
+            android:textColor="#1B5E20"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discover Nature with AI"
+            android:textColor="#558B2F"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:background="#E1EDE0"
+            android:contentDescription="Selected plant image" />
+
+
+        <Button
+            android:id="@+id/btnScan"
+
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+
+            android:layout_width="220dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:text="Scan a Plant"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnGallery"
+
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+
+            android:layout_width="220dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:text="Choose from Gallery"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp" />
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_width="220dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:text="Scan History"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="14dp">
+
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Result: Waiting for image"
+                android:textColor="#1B5E20"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtConfidence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confidence: --"
+                android:textColor="#444444"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtScientificName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scientific Name:"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category:"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtCare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Care Tips:"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GreenLensAI • Identify • Learn • Care"
+            android:textColor="#558B2F"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+</ScrollView>
